@@ -1,0 +1,31 @@
+Admin
+1. Home
+2. Admin
+3. EIM => {Add Employee, Edit Employee, View Employee List}
+4. Reports:(utilities)
+5. Leave
+6. Track Employee: (utilities)
+
+**********************************
+Manager
+1. Home
+2. Admin
+2. EIM =>{View Employee List, Access Own Profile}
+3. Time Registration
+4. ContactBook
+5. Reports (utility)
+
+*********************************
+
+Employee
+1. Home
+2. Time Registration
+3. Leave
+
+Eim => {initial insertion, Access Own Profile}
+
+//Bugs:
+1. On the welcome screen, the side menu is not immediately displayed when navbar is clicked. It takes two clicks the first time. 
+
+//Reviews Wanted on topics:
+1. Navigation to the home pages.

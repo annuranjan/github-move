@@ -1,0 +1,17 @@
+<div *ngIf="menuTitle">
+  <nav>
+    <ul *ngFor="let menuItem of menuTitle.subMenu; let i = index" class="list-group">
+      <li class="list-group-item list-group-item-light">
+        <!-- <span [ngStyle]="{backgroundColor: 'black', color: 'white'}" class="header list-group" appDropdown> -->
+        <span appDropdown>
+          {{menuItem.title}}
+        </span>
+        <ul class="sub-menu list-group" *ngFor="let submenuItem of menuItem.subMenu">
+          <li class="list-group-item list-group-item-info">
+            <a (click)="onClickSubmenu(submenuItem)">{{submenuItem}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

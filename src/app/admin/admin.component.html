@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- <app-navbar-admin></app-navbar-admin> -->
+      <app-navbar></app-navbar>
+    </div>
+  </div>
+  <div *ngIf="displayMenu; else showHome">
+    <!-- <app-adminmainpage></app-adminmainpage>
+     -->
+    <div class="row">
+      <div class="col-sm-2">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col-sm-10">
+        <div *ngIf="submenuTitle">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #showHome>
+    <h3>Welcome Admin!</h3>
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Welcome_heading.svg/1280px-Welcome_heading.svg.png" alt="hello"> -->
+  </ng-template>
+</div>
